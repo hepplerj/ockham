@@ -1,0 +1,16 @@
+language: ruby
+rvm: 2.1
+script: "./_scripts/travis_build.sh"
+branches:
+  only:
+  - master  # this is our preview branch
+  - live    # this is our live site branch
+env:
+  global:
+  - secure: ...
+  - secure: ...
+notifications:
+  slack: acs-stanford:nTs1cMbri1Nzrr6Qqt3r9opu
+env:
+  global:
+  - NOKOGIRI_USE_SYSTEM_LIBRARIES=true # speeds up htmlproofer installation
