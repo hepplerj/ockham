@@ -5,10 +5,6 @@ branches:
   only:
   - master  # this is our preview branch
   - live    # this is our live site branch
-env:
-  global:
-  - secure: ...
-  - secure: ...
 notifications:
   slack: acs-stanford:nTs1cMbri1Nzrr6Qqt3r9opu
 env:
