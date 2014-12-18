@@ -42,3 +42,4 @@ projects:
     url: year-of-the-bay
   - title: Emotions of London
     url: emotions-of-london
+exclude: [vendor]
