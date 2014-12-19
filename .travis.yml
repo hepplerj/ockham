@@ -1,6 +1,9 @@
 language: ruby
 rvm: 2.1
-script: "./_scripts/travis_build.sh"
+before_script:
+- bundle exec jekyll build
+after_success:
+- "./_scripts/travis_deploy.sh"
 branches:
   only:
   - master  # this is our preview branch
