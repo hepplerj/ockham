@@ -3,7 +3,9 @@
 set -e # halt script on error
 
 bundle exec jekyll build
-echo "Successful script run."
+bundle exec rake stage
+
+#echo "Successful script run."
 #bundle exec htmlproof ./_site
 
 #if [[ $TRAVIS_BRANCH == 'master' ]] ; then
