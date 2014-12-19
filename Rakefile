@@ -2,6 +2,8 @@ require 'rake'
 require 'date'
 require 'yaml'
 
+task :default => :stage
+
 desc "Build site with Jekyll"
 task :build do
   system 'bundle exec jekyll build'
