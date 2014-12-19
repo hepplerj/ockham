@@ -3,7 +3,8 @@
 set -e # halt script on error
 
 bundle exec jekyll build
-bundle exec rake stage
+
+rake stage
 
 #echo "Successful script run."
 #bundle exec htmlproof ./_site
