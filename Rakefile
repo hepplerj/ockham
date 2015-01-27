@@ -2,20 +2,15 @@ require 'rake'
 require 'date'
 require 'yaml'
 
-task :default => :stage
+task :default => :rsync
 
 desc "Build site with Jekyll"
 task :build do
   system 'bundle exec jekyll build'
 end
 
-desc "Generate and publish site to stage.cesta.stanford.edu."
-task :stage => [:build] do
-  system "echo 'Staging to stage.cesta.stanford.edu...'"
-end
-
 desc "Deploy site with rsync"
-task :rsync do
+task :rsync => [:build] do
   puts "\n Deploying site with rsync..."
 
   ssh_port      = "22"
