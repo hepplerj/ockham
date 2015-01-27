@@ -20,7 +20,7 @@ task :rsync do
 
   ssh_port      = "22"
   ssh_user      = "jason@74.207.249.200"
-  rsync_delete  = false
+  rsync_delete  = true
   rsync_options = "--checksum --stats -avz -e"
   public_dir    = "_site"
   document_root = "/var/www/cestadev/"
