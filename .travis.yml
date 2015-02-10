@@ -14,4 +14,5 @@ env:
   global:
   - NOKOGIRI_USE_SYSTEM_LIBRARIES=true # speeds up htmlproofer installation
 addons:
-    ssh_known_hosts: 74.207.249.200
+    ssh_known_hosts:
+    - 74.207.249.200
