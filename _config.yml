@@ -8,7 +8,7 @@ type:                     project
 markdown:                 redcarpet
 highlighter:              pygments
 description:              "Ockham is a static site platform for quickly publishing collaborative research in the humanities."
-destination:              cesta_live
+destination:              /afs/ir/users/j/h/jheppler/WWW/cesta_live
 category_dir :
 category_title_prefix :   ''
 category_title :          ''
