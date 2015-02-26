@@ -32,6 +32,6 @@ $REMOTE_REPO      = "https://github.com/hepplerj/ockham.git";
  * Deployment
  */
 
-shell_exec("cd {$LOCAL_ROOT} && git pull && jekyll build")
+shell_exec("cd {$LOCAL_ROOT} && git pull")
 
 ?>
