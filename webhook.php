@@ -21,17 +21,8 @@
 error_reporting(E_ALL);
 ini_set('display_errors', '1');
 
-/**
- * Configure
- */
+$output = shell_exec('cd /afs/ir/users/j/h/jheppler/WWW/cesta && git pull');
 
-$LOCAL_ROOT       = "/afs/ir/users/j/h/jheppler/WWW/cesta";
-$REMOTE_REPO      = "https://github.com/hepplerj/ockham.git";
-
-/**
- * Deployment
- */
-
-shell_exec("cd {$LOCAL_ROOT} && git pull")
+echo $output;
 
 ?>
